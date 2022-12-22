@@ -1,0 +1,8 @@
+Version 0.1 notes:
+    - Most Viable Product(ish)
+    - Placeholder assets
+    - Game logic very inefficient, especially when more enemies are being rendered
+        - Although it now runs more optimized using convert_alpha() on images
+    - Enemies wont appear unless you actually shoot somewhere
+    - No audio
+    - No proper menu or text rendering

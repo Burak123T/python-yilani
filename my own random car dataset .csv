@@ -1,0 +1,8 @@
+car name;color;price;top speed(km/h);fuel type;fuel usage (km/litre);age;acceleration (0 - 100 km, sec.)
+BMW;white; $65.000,00 ;280;hybrid;32;0,6;2,8
+BMW;red; $32.500,00 ;220;diesel;23,2;4,1;5,3
+BMW;white; $40.000,00 ;230;hybrid;29,6;3;3,7
+BMW;black; $71.400,00 ;285;electric;36,3;0,9;3,1
+BMW;navy; $67.000,00 ;310;hybrid;28,4;1,1;2,6
+BMW;black; $9.150,00 ;180;petrol;15,5;8,4;8,3
+BMW;brown; $75.000,00 ;290;hybrid;37,9;1;3,9
