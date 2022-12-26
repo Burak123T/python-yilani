@@ -6,3 +6,5 @@ Version 0.1 notes:
     - Enemies wont appear unless you actually shoot somewhere
     - No audio
     - No proper menu or text rendering
+
+    now added to git
