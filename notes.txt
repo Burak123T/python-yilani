@@ -7,6 +7,5 @@ Version 0.1 notes:
     - No audio
     - No proper menu or text rendering
 
-    now added to git
-
-    I also want to add animations as next
+Version 0.1.1 notes:
+    - Now game runs continously, event if there's no events

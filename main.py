@@ -156,6 +156,10 @@ def main_loop():
 
         # Game speed
         clock.tick(100)
+
+        CUSTOM_EVENT = pygame.USEREVENT+1
+        my_event = pygame.event.Event(CUSTOM_EVENT, message="event added")
+        pygame.event.post(my_event)
     
         # If user clicked the window close button
         for event in pygame.event.get(): 
