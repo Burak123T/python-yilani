@@ -8,6 +8,7 @@ user_score = 0
 speedMul= 3
 scoreMul = 1
 killedNum = 0
+ticks = 0
 
 # Run or not?
 end = False
@@ -102,6 +103,9 @@ class EnemyBoat(pygame.sprite.Sprite):
     def update(self):
         self.speedMultiplier = speedMul
         self.rect.y += self.speedMultiplier
+
+    def explode(self):
+        self.surf = pygame.image.load("Fire4_1.png").convert_alpha()
     
     # Another difficulty increasing function
     def incrSpeed(self):
@@ -110,6 +114,7 @@ class EnemyBoat(pygame.sprite.Sprite):
 
     def reset(self):
         global speedMul, scoreMul
+        self.surf = pygame.image.load("placeholder enemy plane.png").convert_alpha()
         speedMul = 3
         scoreMul = 1
  
@@ -212,6 +217,7 @@ def main_loop():
                 for enemy in enemies_list:
                         # If bullet hits enemy
                         if (pygame.sprite.spritecollide( enemy, bullet_list, True, collided=pygame.sprite.collide_mask )):
+                            enemy.explode()
                             killedNum += 1
                             score += 1
                             user_score += scoreMul
